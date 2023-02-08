@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Heron_Cendre.props" />
+</Project>
