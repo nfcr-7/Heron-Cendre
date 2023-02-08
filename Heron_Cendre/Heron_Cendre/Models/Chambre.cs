@@ -5,6 +5,7 @@ namespace Heron_Cendre.Models
 {
     public class Chambre
     {
+<<<<<<< HEAD
         [Key]
         public int ChambreId { get; set; }
 
@@ -27,5 +28,8 @@ namespace Heron_Cendre.Models
 
         [ForeignKey("cinemaId")]
         public Reservation reservation { get; set; }
+=======
+
+>>>>>>> f4a186c886d2e34e279b4514b1b6a43c46029e19
     }
 }
