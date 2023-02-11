@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Heron_Cendre.Data.Enum;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Heron_Cendre.Models
@@ -25,7 +26,7 @@ namespace Heron_Cendre.Models
 
         [ForeignKey("Reservation")]
 
-        public Reservation reservation { get; set; }
+        public ReservationE ReservationE { get; set; }
 
         [Display(Name = "Prix")]
 
