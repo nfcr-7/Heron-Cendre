@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Heron_Cendre.Data.Enum;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Heron_Cendre.Models
@@ -11,7 +12,8 @@ namespace Heron_Cendre.Models
 
         [Display(Name = "Nombre place")]
 
-        public int Nombre_Place { get; set; }
+        /////////////enumeration de categorie/nombre de place des tables
+        public CategorieTable table { get; set; }
 
         [ForeignKey("Reservation")]
 

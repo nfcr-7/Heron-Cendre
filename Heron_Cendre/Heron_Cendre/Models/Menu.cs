@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Heron_Cendre.Data.Enum;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Heron_Cendre.Models
@@ -25,9 +26,7 @@ namespace Heron_Cendre.Models
 
         public float Prix { get; set; }
 
-        [Display(Name = "Categorie")]
-
-        public string Categorie { get; set; }   
+        public CategorieMenu   menu { get; set; }
 
     }
 }
