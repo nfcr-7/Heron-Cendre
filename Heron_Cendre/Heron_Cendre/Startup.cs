@@ -14,8 +14,11 @@ namespace Heron_Cendre
         {
             var builder = WebApplication.CreateBuilder(args);
             ConfigureServices(builder);
+
             var app = builder.Build();
+
             Configure(app);
+
             return app;
         }
 
@@ -23,9 +26,10 @@ namespace Heron_Cendre
         {
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddControllersWithViews();
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString")));
-            builder.Services.AddControllersWithViews();
+           
         }
 
         public static void Configure(WebApplication app)

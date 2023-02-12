@@ -25,9 +25,6 @@ namespace Heron_Cendre.Models
 
         public float Prix { get; set; }
 
-        public float prix { get; set; }
-
-
         [Display(Name = "Description")]
         public string Description { get; set; }
 

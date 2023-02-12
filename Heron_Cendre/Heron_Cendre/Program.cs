@@ -1,11 +1,9 @@
 using Heron_Cendre;
-var builder = WebApplication.CreateBuilder(args);
+//var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+//builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
-
-
+var app = Startup.InitializeApp(args);
 
 app.Run();

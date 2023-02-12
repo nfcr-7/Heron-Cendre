@@ -24,9 +24,11 @@ namespace Heron_Cendre.Models
 
         public DateTime Date_Fin { get; set; }
 
-        [ForeignKey("Reservation")]
+        public int reservationId { get; set; }
 
-        public ReservationE ReservationE { get; set; }
+        [ForeignKey("reservationId")]
+
+        public Reservation ReservationE { get; set; }
 
         [Display(Name = "Prix")]
 

@@ -1,19 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
-<<<<<<< HEAD
 using System.Xml.Linq;
-=======
->>>>>>> 7fdb3180ad69afff04720e740d61633243ef9d8d
 
 namespace Heron_Cendre.Models
 {
     public class Client
     {
         [Key]
-<<<<<<< HEAD
-        public int IdClient { get; set; }
-=======
         public int Id { get; set; }
->>>>>>> 7fdb3180ad69afff04720e740d61633243ef9d8d
 
 
         [Display(Name = "Nom Client")]
@@ -34,7 +27,6 @@ namespace Heron_Cendre.Models
         public string Email { get; set; }
 
         [Display(Name = "Date de naissance Client")]
-<<<<<<< HEAD
         public DateTime DateNaissance { get; set; }
 
         [Display(Name = "Mot de passe Client")]
@@ -42,14 +34,6 @@ namespace Heron_Cendre.Models
 
         [Display(Name = "Numero de compte Client")]
         public int NCompte { get; set; }
-=======
-        public DateTime Naissance { get; set; }
 
-        [Display(Name = "Mot de passe Client")]
-        public string Passe { get; set; }
-
-        [Display(Name = "Numero de compte Client")]
-        public string NCompte { get; set; }
->>>>>>> 7fdb3180ad69afff04720e740d61633243ef9d8d
     }
 }

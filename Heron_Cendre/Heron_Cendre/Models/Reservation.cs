@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Heron_Cendre.Data.Enum;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Heron_Cendre.Models
@@ -17,9 +18,7 @@ namespace Heron_Cendre.Models
 
         public DateTime Date_Fin { get; set; }
 
-        [Display(Name = "Mode reservation")]
-
-        public string Mode_Reservation { get; set; }
+        public ModePayement payement { get; set; }
 
         [ForeignKey("Client")]
 
